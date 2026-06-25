@@ -1,12 +1,19 @@
+import { RouterProvider } from "react-router"
+import { router } from "../app/app.routes"
+import { useAuth } from "../features/hook/useAuth"
+import { useEffect } from "react"
 
 
 function App() {
 
+  const auth = useAuth()
+
+  useEffect(() => {
+    auth.handleGetMe()
+  }, [])
 
   return (
-    <>
-     <h1 className="text-red-400">Hello Bacho!</h1>
-    </>
+    <RouterProvider router={router} />
   )
 }
 
