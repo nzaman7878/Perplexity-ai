@@ -173,3 +173,30 @@ export async function verifyEmail(req, res) {
  
 
 
+/**
+ * @desc Logout user and clear cookie
+ * @route POST /api/auth/logout
+ * @access Private
+ */
+export async function logout(req, res) {
+    try {
+        // Clear the token cookie
+        res.clearCookie("token", {
+            httpOnly: true, // Should match how you set it in login
+            secure: process.env.NODE_ENV === "production", // Same as your login setting if you have one
+            sameSite: "strict" // Prevents CSRF
+        });
+
+        res.status(200).json({
+            message: "User logged out successfully",
+            success: true
+        });
+    } catch (error) {
+        console.error("Logout Error:", error);
+        res.status(500).json({
+            message: "Server error during logout",
+            success: false,
+            err: error.message
+        });
+    }
+}

@@ -32,9 +32,18 @@ const chatSlice = createSlice({
         setCurrentChatId: (state, action) => {
             state.currentChatId = action.payload
         },
-       
         clearCurrentChat: (state) => {
             state.currentChatId = null
+        },
+        // 👇 ADDED: Reducer to remove a specific chat
+        removeChat: (state, action) => {
+            const chatIdToDelete = action.payload;
+            delete state.chats[chatIdToDelete];
+            
+            // If the user deleted the chat they were currently looking at, go to home screen
+            if (state.currentChatId === chatIdToDelete) {
+                state.currentChatId = null;
+            }
         },
         setLoading: (state, action) => {
             state.isLoading = action.payload
@@ -45,24 +54,6 @@ const chatSlice = createSlice({
     }
 })
 
-
-export const { setChats, setCurrentChatId, clearCurrentChat, setLoading, setError, createNewChat, addNewMessage, addMessages } = chatSlice.actions
+// 👇 Don't forget to export removeChat here!
+export const { setChats, setCurrentChatId, clearCurrentChat, removeChat, setLoading, setError, createNewChat, addNewMessage, addMessages } = chatSlice.actions
 export default chatSlice.reducer
-
-
-// chats = {
-//     "docker and AWS": {
-//         messages: [
-//             {
-//                 role: "user",
-//                 content: "What is docker?"
-//             },
-//             {
-//                 role: "ai",
-//                 content: "Docker is a platform that allows developers to automate the deployment of applications inside lightweight, portable containers. It provides an efficient way to package and distribute software, ensuring consistency across different environments."
-//             }
-//         ],
-//         id: "docker and AWS",
-//         lastUpdated: "2024-06-20T12:34:56Z",
-//     }
-// }
