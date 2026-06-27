@@ -1,0 +1,793 @@
+Folder PATH listing for volume Windows
+Volume serial number is 00000097 2890:EBDB
+C:.
++---node_modules
+|   +---.bin
+|   +---@cfworker
+|   |   \---json-schema
+|   |       +---dist
+|   |       |   +---commonjs
+|   |       |   \---esm
+|   |       \---src
+|   +---@google
+|   |   \---generative-ai
+|   |       +---dist
+|   |       |   +---scripts
+|   |       |   +---server
+|   |       |   |   +---scripts
+|   |       |   |   +---src
+|   |       |   |   |   +---methods
+|   |       |   |   |   +---models
+|   |       |   |   |   +---requests
+|   |       |   |   |   \---server
+|   |       |   |   \---types
+|   |       |   |       \---server
+|   |       |   +---src
+|   |       |   |   +---methods
+|   |       |   |   +---models
+|   |       |   |   +---requests
+|   |       |   |   \---server
+|   |       |   \---types
+|   |       |       \---server
+|   |       \---server
+|   +---@langchain
+|   |   +---core
+|   |   |   +---callbacks
+|   |   |   |   \---dispatch
+|   |   |   +---dist
+|   |   |   |   +---caches
+|   |   |   |   +---callbacks
+|   |   |   |   |   \---dispatch
+|   |   |   |   +---documents
+|   |   |   |   +---document_loaders
+|   |   |   |   +---errors
+|   |   |   |   +---example_selectors
+|   |   |   |   +---indexing
+|   |   |   |   +---language_models
+|   |   |   |   +---load
+|   |   |   |   +---messages
+|   |   |   |   |   +---block_translators
+|   |   |   |   |   \---content
+|   |   |   |   +---output_parsers
+|   |   |   |   |   +---openai_functions
+|   |   |   |   |   \---openai_tools
+|   |   |   |   +---prompts
+|   |   |   |   +---retrievers
+|   |   |   |   |   \---document_compressors
+|   |   |   |   +---runnables
+|   |   |   |   +---singletons
+|   |   |   |   |   \---async_local_storage
+|   |   |   |   +---structured_query
+|   |   |   |   +---testing
+|   |   |   |   +---tools
+|   |   |   |   +---tracers
+|   |   |   |   +---types
+|   |   |   |   +---utils
+|   |   |   |   |   +---fast-json-patch
+|   |   |   |   |   |   \---src
+|   |   |   |   |   +---is-network-error
+|   |   |   |   |   +---js-sha256
+|   |   |   |   |   +---ml-distance
+|   |   |   |   |   +---ml-distance-euclidean
+|   |   |   |   |   +---p-retry
+|   |   |   |   |   +---sax-js
+|   |   |   |   |   +---testing
+|   |   |   |   |   +---types
+|   |   |   |   |   +---uuid
+|   |   |   |   |   \---zod-to-json-schema
+|   |   |   |   |       \---parsers
+|   |   |   |   \---_virtual
+|   |   |   |       \---_rolldown
+|   |   |   +---document_loaders
+|   |   |   +---language_models
+|   |   |   +---load
+|   |   |   +---messages
+|   |   |   +---output_parsers
+|   |   |   +---retrievers
+|   |   |   +---runnables
+|   |   |   +---tracers
+|   |   |   +---types
+|   |   |   \---utils
+|   |   +---google-genai
+|   |   |   \---dist
+|   |   |       \---utils
+|   |   +---langgraph
+|   |   |   \---dist
+|   |   |       +---channels
+|   |   |       +---func
+|   |   |       +---graph
+|   |   |       |   \---zod
+|   |   |       +---prebuilt
+|   |   |       +---pregel
+|   |   |       |   \---utils
+|   |   |       +---state
+|   |   |       |   +---prebuilt
+|   |   |       |   \---values
+|   |   |       \---stream
+|   |   |           \---transformers
+|   |   +---langgraph-checkpoint
+|   |   |   \---dist
+|   |   |       +---cache
+|   |   |       +---serde
+|   |   |       |   \---utils
+|   |   |       |       \---fast-safe-stringify
+|   |   |       \---store
+|   |   +---langgraph-sdk
+|   |   |   +---dist
+|   |   |   |   +---auth
+|   |   |   |   +---client
+|   |   |   |   |   +---assistants
+|   |   |   |   |   +---crons
+|   |   |   |   |   +---runs
+|   |   |   |   |   +---store
+|   |   |   |   |   +---stream
+|   |   |   |   |   |   +---handles
+|   |   |   |   |   |   \---transport
+|   |   |   |   |   +---threads
+|   |   |   |   |   \---ui-internal
+|   |   |   |   +---logging
+|   |   |   |   +---node_modules
+|   |   |   |   |   \---.pnpm
+|   |   |   |   |       +---eventemitter3@5.0.4
+|   |   |   |   |       |   \---node_modules
+|   |   |   |   |       |       \---eventemitter3
+|   |   |   |   |       +---is-network-error@1.3.1
+|   |   |   |   |       |   \---node_modules
+|   |   |   |   |       |       \---is-network-error
+|   |   |   |   |       +---p-queue@9.1.0
+|   |   |   |   |       |   \---node_modules
+|   |   |   |   |       |       \---p-queue
+|   |   |   |   |       |           \---dist
+|   |   |   |   |       +---p-retry@7.1.1
+|   |   |   |   |       |   \---node_modules
+|   |   |   |   |       |       \---p-retry
+|   |   |   |   |       \---p-timeout@7.0.1
+|   |   |   |   |           \---node_modules
+|   |   |   |   |               \---p-timeout
+|   |   |   |   +---react
+|   |   |   |   +---react-ui
+|   |   |   |   |   \---server
+|   |   |   |   +---singletons
+|   |   |   |   +---stream
+|   |   |   |   |   +---discovery
+|   |   |   |   |   \---projections
+|   |   |   |   +---ui
+|   |   |   |   |   \---stream
+|   |   |   |   +---utils
+|   |   |   |   \---_virtual
+|   |   |   |       \---_rolldown
+|   |   |   \---node_modules
+|   |   |       +---eventemitter3
+|   |   |       |   \---dist
+|   |   |       +---p-queue
+|   |   |       |   \---dist
+|   |   |       \---p-timeout
+|   |   +---mistralai
+|   |   |   \---dist
+|   |   |       \---utils
+|   |   \---protocol
+|   +---@mistralai
+|   |   \---mistralai
+|   |       +---esm
+|   |       |   +---extra
+|   |       |   |   \---realtime
+|   |       |   +---funcs
+|   |       |   +---hooks
+|   |       |   +---lib
+|   |       |   +---models
+|   |       |   |   +---components
+|   |       |   |   +---errors
+|   |       |   |   \---operations
+|   |       |   +---sdk
+|   |       |   \---types
+|   |       +---examples
+|   |       |   \---src
+|   |       |       +---azure
+|   |       |       \---gcp
+|   |       +---packages
+|   |       |   +---mistralai-azure
+|   |       |   |   +---examples
+|   |       |   |   \---src
+|   |       |   |       +---funcs
+|   |       |   |       +---hooks
+|   |       |   |       +---lib
+|   |       |   |       +---models
+|   |       |   |       |   +---components
+|   |       |   |       |   \---errors
+|   |       |   |       +---sdk
+|   |       |   |       \---types
+|   |       |   \---mistralai-gcp
+|   |       |       +---examples
+|   |       |       \---src
+|   |       |           +---funcs
+|   |       |           +---hooks
+|   |       |           +---lib
+|   |       |           +---models
+|   |       |           |   +---components
+|   |       |           |   \---errors
+|   |       |           +---sdk
+|   |       |           \---types
+|   |       +---src
+|   |       |   +---extra
+|   |       |   |   \---realtime
+|   |       |   +---funcs
+|   |       |   +---hooks
+|   |       |   +---lib
+|   |       |   +---models
+|   |       |   |   +---components
+|   |       |   |   +---errors
+|   |       |   |   \---operations
+|   |       |   +---sdk
+|   |       |   \---types
+|   |       \---tests
+|   |           +---extra
+|   |           \---v2
+|   +---@mongodb-js
+|   |   \---saslprep
+|   |       \---dist
+|   +---@socket.io
+|   |   \---component-emitter
+|   |       \---lib
+|   |           +---cjs
+|   |           \---esm
+|   +---@standard-schema
+|   |   \---spec
+|   |       \---dist
+|   +---@tavily
+|   |   \---core
+|   |       \---dist
+|   +---@types
+|   |   +---cors
+|   |   +---json-schema
+|   |   +---node
+|   |   |   +---assert
+|   |   |   +---dns
+|   |   |   +---fs
+|   |   |   +---inspector
+|   |   |   +---path
+|   |   |   +---readline
+|   |   |   +---stream
+|   |   |   +---test
+|   |   |   +---timers
+|   |   |   +---ts5.6
+|   |   |   |   \---compatibility
+|   |   |   +---ts5.7
+|   |   |   |   \---compatibility
+|   |   |   +---util
+|   |   |   +---web-globals
+|   |   |   \---zlib
+|   |   +---webidl-conversions
+|   |   +---whatwg-url
+|   |   |   \---lib
+|   |   \---ws
+|   +---accepts
+|   +---agent-base
+|   |   \---dist
+|   +---asynckit
+|   |   \---lib
+|   +---axios
+|   |   +---dist
+|   |   |   +---browser
+|   |   |   +---esm
+|   |   |   \---node
+|   |   +---lib
+|   |   |   +---adapters
+|   |   |   +---cancel
+|   |   |   +---core
+|   |   |   +---defaults
+|   |   |   +---env
+|   |   |   |   \---classes
+|   |   |   +---helpers
+|   |   |   \---platform
+|   |   |       +---browser
+|   |   |       |   \---classes
+|   |   |       +---common
+|   |   |       \---node
+|   |   |           \---classes
+|   |   \---node_modules
+|   |       +---agent-base
+|   |       |   +---dist
+|   |       |   |   \---src
+|   |       |   \---src
+|   |       \---https-proxy-agent
+|   |           \---dist
+|   +---base64-js
+|   +---base64id
+|   |   \---lib
+|   +---bcryptjs
+|   |   +---bin
+|   |   \---umd
+|   +---body-parser
+|   |   +---lib
+|   |   |   \---types
+|   |   \---node_modules
+|   |       \---content-type
+|   |           \---dist
+|   +---bson
+|   |   +---etc
+|   |   +---lib
+|   |   \---src
+|   |       +---parser
+|   |       |   \---on_demand
+|   |       \---utils
+|   +---buffer-equal-constant-time
+|   +---bytes
+|   +---call-bind-apply-helpers
+|   |   +---.github
+|   |   \---test
+|   +---call-bound
+|   |   +---.github
+|   |   \---test
+|   +---combined-stream
+|   |   \---lib
+|   +---content-disposition
+|   +---content-type
+|   +---cookie
+|   +---cookie-parser
+|   +---cookie-signature
+|   +---cors
+|   |   \---lib
+|   +---debug
+|   |   \---src
+|   +---delayed-stream
+|   |   \---lib
+|   +---depd
+|   |   \---lib
+|   |       \---browser
+|   +---dotenv
+|   |   +---lib
+|   |   \---skills
+|   |       +---dotenv
+|   |       \---dotenvx
+|   +---dunder-proto
+|   |   +---.github
+|   |   \---test
+|   +---ecdsa-sig-formatter
+|   |   \---src
+|   +---ee-first
+|   +---encodeurl
+|   +---engine.io
+|   |   +---build
+|   |   |   +---contrib
+|   |   |   +---parser-v3
+|   |   |   +---transports
+|   |   |   \---transports-uws
+|   |   \---node_modules
+|   |       +---accepts
+|   |       +---mime-db
+|   |       +---mime-types
+|   |       \---negotiator
+|   |           \---lib
+|   +---engine.io-parser
+|   |   \---build
+|   |       +---cjs
+|   |       |   \---contrib
+|   |       \---esm
+|   |           \---contrib
+|   +---es-define-property
+|   |   +---.github
+|   |   \---test
+|   +---es-errors
+|   |   +---.github
+|   |   \---test
+|   +---es-object-atoms
+|   |   +---.github
+|   |   \---test
+|   +---es-set-tostringtag
+|   |   \---test
+|   +---escape-html
+|   +---etag
+|   +---eventemitter3
+|   |   \---umd
+|   +---express
+|   |   +---lib
+|   |   \---node_modules
+|   |       \---cookie-signature
+|   +---express-validator
+|   |   \---lib
+|   |       +---chain
+|   |       +---context-items
+|   |       \---middlewares
+|   +---finalhandler
+|   +---follow-redirects
+|   +---form-data
+|   |   +---lib
+|   |   \---node_modules
+|   |       +---mime-db
+|   |       \---mime-types
+|   +---forwarded
+|   +---fresh
+|   +---function-bind
+|   |   +---.github
+|   |   \---test
+|   +---get-intrinsic
+|   |   +---.github
+|   |   \---test
+|   +---get-proto
+|   |   +---.github
+|   |   \---test
+|   +---gopd
+|   |   +---.github
+|   |   \---test
+|   +---has-symbols
+|   |   +---.github
+|   |   \---test
+|   |       \---shams
+|   +---has-tostringtag
+|   |   +---.github
+|   |   \---test
+|   |       \---shams
+|   +---hasown
+|   |   \---.github
+|   +---http-errors
+|   +---https-proxy-agent
+|   |   \---dist
+|   +---iconv-lite
+|   |   +---encodings
+|   |   |   \---tables
+|   |   +---lib
+|   |   |   \---helpers
+|   |   \---types
+|   +---inherits
+|   +---ipaddr.js
+|   |   \---lib
+|   +---is-network-error
+|   +---is-promise
+|   +---js-tiktoken
+|   |   \---dist
+|   |       \---ranks
+|   +---jsonwebtoken
+|   |   \---lib
+|   +---jwa
+|   +---jws
+|   |   \---lib
+|   +---kareem
+|   +---langchain
+|   |   +---chat_models
+|   |   +---dist
+|   |   |   +---agents
+|   |   |   |   +---middleware
+|   |   |   |   |   \---provider
+|   |   |   |   |       +---anthropic
+|   |   |   |   |       +---aws
+|   |   |   |   |       \---openai
+|   |   |   |   +---nodes
+|   |   |   |   +---tests
+|   |   |   |   \---transformers
+|   |   |   +---chat_models
+|   |   |   +---hub
+|   |   |   +---load
+|   |   |   +---storage
+|   |   |   +---tools
+|   |   |   \---_virtual
+|   |   |       \---_rolldown
+|   |   +---hub
+|   |   +---load
+|   |   \---storage
+|   +---langsmith
+|   |   +---dist
+|   |   |   +---anonymizer
+|   |   |   +---evaluation
+|   |   |   +---experimental
+|   |   |   |   +---anthropic
+|   |   |   |   +---otel
+|   |   |   |   \---vercel
+|   |   |   +---jest
+|   |   |   +---sandbox
+|   |   |   +---singletons
+|   |   |   +---utils
+|   |   |   |   +---chalk
+|   |   |   |   |   \---source
+|   |   |   |   |       \---vendor
+|   |   |   |   |           +---ansi-styles
+|   |   |   |   |           \---supports-color
+|   |   |   |   +---console-table-printer
+|   |   |   |   |   \---src
+|   |   |   |   |       +---internalTable
+|   |   |   |   |       +---models
+|   |   |   |   |       \---utils
+|   |   |   |   +---fast-safe-stringify
+|   |   |   |   +---is-network-error
+|   |   |   |   +---jestlike
+|   |   |   |   |   \---vendor
+|   |   |   |   +---p-retry
+|   |   |   |   +---prompt_cache
+|   |   |   |   +---simple-wcswidth
+|   |   |   |   |   \---src
+|   |   |   |   +---uuid
+|   |   |   |   |   \---src
+|   |   |   |   \---xxhash
+|   |   |   +---vitest
+|   |   |   |   \---utils
+|   |   |   +---wrappers
+|   |   |   \---_openapi_client
+|   |   |       +---core
+|   |   |       +---internal
+|   |   |       |   +---qs
+|   |   |       |   \---utils
+|   |   |       \---resources
+|   |   |           +---datasets
+|   |   |           \---sessions
+|   |   +---experimental
+|   |   |   \---otel
+|   |   +---jest
+|   |   +---singletons
+|   |   +---utils
+|   |   +---vitest
+|   |   \---wrappers
+|   +---lodash
+|   |   \---fp
+|   +---lodash.includes
+|   +---lodash.isboolean
+|   +---lodash.isinteger
+|   +---lodash.isnumber
+|   +---lodash.isplainobject
+|   +---lodash.isstring
+|   +---lodash.once
+|   +---math-intrinsics
+|   |   +---.github
+|   |   +---constants
+|   |   \---test
+|   +---media-typer
+|   +---memory-pager
+|   +---merge-descriptors
+|   +---mime-db
+|   +---mime-types
+|   +---mongodb
+|   |   +---etc
+|   |   +---lib
+|   |   |   +---bulk
+|   |   |   +---client-side-encryption
+|   |   |   |   \---providers
+|   |   |   +---cmap
+|   |   |   |   +---auth
+|   |   |   |   |   \---mongodb_oidc
+|   |   |   |   +---handshake
+|   |   |   |   \---wire_protocol
+|   |   |   |       \---on_demand
+|   |   |   +---cursor
+|   |   |   +---gridfs
+|   |   |   +---operations
+|   |   |   |   +---client_bulk_write
+|   |   |   |   \---search_indexes
+|   |   |   \---sdam
+|   |   \---src
+|   |       +---bulk
+|   |       +---client-side-encryption
+|   |       |   \---providers
+|   |       +---cmap
+|   |       |   +---auth
+|   |       |   |   \---mongodb_oidc
+|   |       |   +---handshake
+|   |       |   \---wire_protocol
+|   |       |       \---on_demand
+|   |       +---cursor
+|   |       +---gridfs
+|   |       +---operations
+|   |       |   +---client_bulk_write
+|   |       |   \---search_indexes
+|   |       \---sdam
+|   +---mongodb-connection-string-url
+|   |   \---lib
+|   +---mongoose
+|   |   +---lib
+|   |   |   +---cast
+|   |   |   +---cursor
+|   |   |   +---drivers
+|   |   |   |   \---node-mongodb-native
+|   |   |   +---error
+|   |   |   +---helpers
+|   |   |   |   +---aggregate
+|   |   |   |   +---cursor
+|   |   |   |   +---discriminator
+|   |   |   |   +---document
+|   |   |   |   +---error
+|   |   |   |   +---indexes
+|   |   |   |   +---model
+|   |   |   |   +---path
+|   |   |   |   +---populate
+|   |   |   |   +---projection
+|   |   |   |   +---query
+|   |   |   |   +---schema
+|   |   |   |   +---schematype
+|   |   |   |   +---timestamps
+|   |   |   |   +---topology
+|   |   |   |   \---update
+|   |   |   +---options
+|   |   |   +---plugins
+|   |   |   +---schema
+|   |   |   |   \---operators
+|   |   |   +---standardSchema
+|   |   |   \---types
+|   |   |       +---array
+|   |   |       |   \---methods
+|   |   |       \---documentArray
+|   |   |           \---methods
+|   |   \---types
+|   +---mpath
+|   |   +---lib
+|   |   \---test
+|   +---mquery
+|   |   +---.github
+|   |   \---lib
+|   |       \---collection
+|   +---ms
+|   +---mustache
+|   |   +---bin
+|   |   \---wrappers
+|   |       +---dojo
+|   |       +---jquery
+|   |       +---mootools
+|   |       +---qooxdoo
+|   |       \---yui3
+|   +---negotiator
+|   |   \---lib
+|   +---nodemailer
+|   |   \---lib
+|   |       +---addressparser
+|   |       +---base64
+|   |       +---dkim
+|   |       +---fetch
+|   |       +---json-transport
+|   |       +---mail-composer
+|   |       +---mailer
+|   |       +---mime-funcs
+|   |       +---mime-node
+|   |       +---punycode
+|   |       +---qp
+|   |       +---sendmail-transport
+|   |       +---ses-transport
+|   |       +---shared
+|   |       +---smtp-connection
+|   |       +---smtp-pool
+|   |       +---smtp-transport
+|   |       +---stream-transport
+|   |       +---well-known
+|   |       \---xoauth2
+|   +---object-assign
+|   +---object-inspect
+|   |   +---.github
+|   |   +---example
+|   |   \---test
+|   |       \---browser
+|   +---on-finished
+|   +---once
+|   +---p-finally
+|   +---p-queue
+|   |   \---dist
+|   +---p-retry
+|   +---p-timeout
+|   +---parseurl
+|   +---path-to-regexp
+|   |   \---dist
+|   +---proxy-addr
+|   +---proxy-from-env
+|   +---punycode
+|   +---qs
+|   |   +---.github
+|   |   +---dist
+|   |   +---lib
+|   |   \---test
+|   +---range-parser
+|   +---raw-body
+|   +---router
+|   |   \---lib
+|   +---safe-buffer
+|   +---safer-buffer
+|   +---semver
+|   |   +---bin
+|   |   +---classes
+|   |   +---functions
+|   |   +---internal
+|   |   \---ranges
+|   +---send
+|   +---serve-static
+|   +---setprototypeof
+|   |   \---test
+|   +---side-channel
+|   |   +---.github
+|   |   \---test
+|   +---side-channel-list
+|   |   +---.github
+|   |   \---test
+|   +---side-channel-map
+|   |   +---.github
+|   |   \---test
+|   +---side-channel-weakmap
+|   |   +---.github
+|   |   \---test
+|   +---sift
+|   |   +---es
+|   |   +---es5m
+|   |   +---lib
+|   |   \---src
+|   +---socket.io
+|   |   +---client-dist
+|   |   +---dist
+|   |   \---node_modules
+|   |       +---accepts
+|   |       +---mime-db
+|   |       +---mime-types
+|   |       \---negotiator
+|   |           \---lib
+|   +---socket.io-adapter
+|   |   \---dist
+|   |       \---contrib
+|   +---socket.io-parser
+|   |   \---build
+|   |       +---cjs
+|   |       +---esm
+|   |       \---esm-debug
+|   +---sparse-bitfield
+|   +---statuses
+|   +---toidentifier
+|   +---tr46
+|   |   \---lib
+|   +---type-is
+|   |   \---node_modules
+|   |       \---content-type
+|   |           \---dist
+|   +---undici-types
+|   +---unpipe
+|   +---validator
+|   |   +---es
+|   |   |   \---lib
+|   |   |       \---util
+|   |   \---lib
+|   |       \---util
+|   +---vary
+|   +---webidl-conversions
+|   |   \---lib
+|   +---whatwg-url
+|   |   \---lib
+|   +---wrappy
+|   +---ws
+|   |   \---lib
+|   +---zod
+|   |   +---locales
+|   |   +---mini
+|   |   +---src
+|   |   |   +---locales
+|   |   |   +---mini
+|   |   |   +---v3
+|   |   |   |   +---benchmarks
+|   |   |   |   +---helpers
+|   |   |   |   +---locales
+|   |   |   |   \---tests
+|   |   |   +---v4
+|   |   |   |   +---classic
+|   |   |   |   |   \---tests
+|   |   |   |   +---core
+|   |   |   |   |   \---tests
+|   |   |   |   |       \---locales
+|   |   |   |   +---locales
+|   |   |   |   \---mini
+|   |   |   |       \---tests
+|   |   |   \---v4-mini
+|   |   +---v3
+|   |   |   +---helpers
+|   |   |   \---locales
+|   |   +---v4
+|   |   |   +---classic
+|   |   |   +---core
+|   |   |   +---locales
+|   |   |   \---mini
+|   |   \---v4-mini
+|   \---zod-to-json-schema
+|       +---.github
+|       \---dist
+|           +---cjs
+|           |   \---parsers
+|           +---esm
+|           |   \---parsers
+|           \---types
+|               \---parsers
+\---src
+    +---config
+    +---controllers
+    +---middleware
+    +---models
+    +---routes
+    +---services
+    +---sockets
+    \---validators
