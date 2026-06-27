@@ -1,13 +1,11 @@
 import { initializeSocketConnection } from "../service/chat.socket";
 import { sendMessage, getChats, getMessages, deleteChat } from "../service/chat.api";
-import { setChats, setCurrentChatId, setError, setLoading, createNewChat, addNewMessage, addMessages } from "../chat.slice";
+import { setChats, setCurrentChatId, clearCurrentChat, setError, setLoading, createNewChat, addNewMessage, addMessages } from "../chat.slice";
 import { useDispatch } from "react-redux";
-
 
 export const useChat = () => {
 
     const dispatch = useDispatch()
-
 
     async function handleSendMessage({ message, chatId }) {
         dispatch(setLoading(true))
@@ -48,7 +46,6 @@ export const useChat = () => {
     }
 
     async function handleOpenChat(chatId, chats) {
-
         console.log(chats[ chatId ]?.messages.length)
 
         if (chats[ chatId ]?.messages.length === 0) {
@@ -68,11 +65,16 @@ export const useChat = () => {
         dispatch(setCurrentChatId(chatId))
     }
 
+    
+    function handleCreateNewChat() {
+        dispatch(clearCurrentChat())
+    }
+
     return {
         initializeSocketConnection,
         handleSendMessage,
         handleGetChats,
-        handleOpenChat
+        handleOpenChat,
+        handleCreateNewChat 
     }
-
 }

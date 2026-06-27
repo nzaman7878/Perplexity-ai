@@ -1,6 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-
 const chatSlice = createSlice({
     name: 'chat',
     initialState: {
@@ -33,6 +32,10 @@ const chatSlice = createSlice({
         setCurrentChatId: (state, action) => {
             state.currentChatId = action.payload
         },
+       
+        clearCurrentChat: (state) => {
+            state.currentChatId = null
+        },
         setLoading: (state, action) => {
             state.isLoading = action.payload
         },
@@ -42,7 +45,8 @@ const chatSlice = createSlice({
     }
 })
 
-export const { setChats, setCurrentChatId, setLoading, setError, createNewChat, addNewMessage, addMessages } = chatSlice.actions
+
+export const { setChats, setCurrentChatId, clearCurrentChat, setLoading, setError, createNewChat, addNewMessage, addMessages } = chatSlice.actions
 export default chatSlice.reducer
 
 
@@ -61,5 +65,4 @@ export default chatSlice.reducer
 //         id: "docker and AWS",
 //         lastUpdated: "2024-06-20T12:34:56Z",
 //     }
-
 // }

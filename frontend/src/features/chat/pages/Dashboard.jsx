@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { useSelector } from 'react-redux';
 import { useChat } from '../hooks/useChat'; 
 
@@ -7,7 +7,7 @@ import Topbar from '../components/Topbar';
 import ChatMessage from '../components/ChatMessage';
 import ChatInput from '../components/ChatInput';
 import LandingView from '../components/LandingView'; 
-import LoadingMessage from '../components/LoadingMessage'; // <-- Import the new loader
+import LoadingMessage from '../components/LoadingMessage'; 
 
 const Dashboard = () => {
   const chat = useChat();
@@ -19,6 +19,8 @@ const Dashboard = () => {
 
   const chats = useSelector((state) => state.chat.chats);
   const currentChatId = useSelector((state) => state.chat.currentChatId);
+
+  
 
   useEffect(() => {
     chat.initializeSocketConnection();
@@ -61,7 +63,7 @@ useEffect(() => {
 
   const openChat = (chatId) => {
     chat.handleOpenChat(chatId, chats);
-    setIsSearching(false); // Reset search state when switching chats
+    setIsSearching(false); 
   };
 
   const currentChatTitle = chats?.[currentChatId]?.title;
@@ -69,13 +71,23 @@ useEffect(() => {
  
   const isNewOrEmptyChat = activeMessages.length === 0 && !isSearching;
 
+  const handleNewChat = () => {
+    
+    chat.handleCreateNewChat(); 
+  
+    setIsSearching(false);
+    
+    setChatInput('');
+  };
+
   return (
     <main className='flex h-screen w-full bg-[#0d0f17] text-[#e8e8f0] font-sans overflow-hidden'>
       <Sidebar 
         chats={chats} 
         currentChatId={currentChatId} 
         onOpenChat={openChat} 
-        onNewChat={() => console.log('Create new chat')} 
+     
+        onNewChat={handleNewChat} 
       />
 
       <section className='relative flex flex-1 flex-col h-full min-w-0'>
