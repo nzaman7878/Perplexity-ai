@@ -5,7 +5,7 @@ import * as z from "zod";
 import { searchInternet } from "./internet.service.js";
 
 const geminiModel = new ChatGoogleGenerativeAI({
-    model: "gemini-flash-latest",
+    model: "gemini-2.5-flash",
     apiKey: process.env.GEMINI_API_KEY
 });
 
@@ -30,8 +30,30 @@ const agent = createAgent({
     tools: [ searchInternetTool ],
 })
 
-export async function generateResponse(messages) {
-    console.log(messages)
+export async function generateResponse(messages, imageBase64) {
+    console.log("Processing message. Image included:", !!imageBase64);
+
+    if (imageBase64) {
+       
+        const latestMessage = messages[messages.length - 1];
+        
+        const content = [
+            { type: "text", text: latestMessage.content },
+            { 
+                type: "image_url", 
+                image_url: { 
+                    url: imageBase64 
+                } 
+            }
+        ];
+
+        const response = await geminiModel.invoke([
+            new SystemMessage("You are a helpful and precise assistant. Analyze the image and answer the user's question."),
+            new HumanMessage({ content: content })
+        ]);
+
+        return response.content;
+    }
 
     const response = await agent.invoke({
         messages: [
@@ -46,11 +68,11 @@ export async function generateResponse(messages) {
                 } else if (msg.role == "ai") {
                     return new AIMessage(msg.content)
                 }
-            })) ]
+            }))
+        ]
     });
 
-    return response.messages[ response.messages.length - 1 ].text;
-
+    return response.messages[response.messages.length - 1].text;
 }
 
 export async function generateChatTitle(message) {

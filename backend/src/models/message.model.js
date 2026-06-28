@@ -16,6 +16,11 @@ const messageSchema = new mongoose.Schema(
             enum: [ 'user', 'ai' ],
             required: true,
         },
+    
+        imageBase64: {
+            type: String,
+            required: false, 
+        },
     },
     { timestamps: true }
 );

@@ -21,9 +21,11 @@
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "express-validator": "^7.3.2",
+    "imagekit": "^6.0.0",
     "jsonwebtoken": "^9.0.3",
     "langchain": "^1.5.2",
     "mongoose": "^9.7.2",
+    "multer": "^2.2.0",
     "nodemailer": "^9.0.1",
     "socket.io": "^4.8.3",
     "zod": "^4.4.3"

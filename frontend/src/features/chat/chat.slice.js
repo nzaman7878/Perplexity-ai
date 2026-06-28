@@ -19,8 +19,8 @@ const chatSlice = createSlice({
             }
         },
         addNewMessage: (state, action) => {
-            const { chatId, content, role } = action.payload
-            state.chats[ chatId ].messages.push({ content, role })
+            const { chatId, content, role, imageBase64 } = action.payload
+            state.chats[ chatId ].messages.push({ content, role, imageBase64 })
         },
         addMessages: (state, action) => {
             const { chatId, messages } = action.payload
@@ -35,12 +35,10 @@ const chatSlice = createSlice({
         clearCurrentChat: (state) => {
             state.currentChatId = null
         },
-        // 👇 ADDED: Reducer to remove a specific chat
         removeChat: (state, action) => {
             const chatIdToDelete = action.payload;
             delete state.chats[chatIdToDelete];
             
-            // If the user deleted the chat they were currently looking at, go to home screen
             if (state.currentChatId === chatIdToDelete) {
                 state.currentChatId = null;
             }
@@ -54,6 +52,5 @@ const chatSlice = createSlice({
     }
 })
 
-// 👇 Don't forget to export removeChat here!
 export const { setChats, setCurrentChatId, clearCurrentChat, removeChat, setLoading, setError, createNewChat, addNewMessage, addMessages } = chatSlice.actions
 export default chatSlice.reducer
